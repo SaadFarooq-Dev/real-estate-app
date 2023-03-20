@@ -41,7 +41,6 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
 }
@@ -221,7 +220,6 @@
 
   .description p {
     align-items: center;
-    inset: 0 0 auto;
     padding: 2rem 1rem 1.4rem;
     border-radius: 0;
     border: none;
@@ -238,7 +236,6 @@
   .description div {
     align-items: flex-end;
     pointer-events: none;
-    inset: auto 0 0;
     padding: 2rem;
     height: 200px;
     background: linear-gradient(
