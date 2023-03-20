@@ -16,6 +16,7 @@ const Search = ({ properties }) => {
  return (
   <Box>
    <Flex
+    onClick={() => setSearchFilters(!searchFilters)}
     cursor='pointer'
     bg='gray.100'
     borderBottom='1px'
@@ -24,11 +25,10 @@ const Search = ({ properties }) => {
     fontWeight='black'
     fontSize='lg'
     justifyContent='center'
-    alignItems='ceneter'
-    onClick={() => setSearchFilters((prevFilters) => !prevFilters)}
+    alignItems='center'
    >
     <Text>Search Property By Filters</Text>
-    <Icon paddingLeft='2' w='7' as={BsFilter}></Icon>
+    <Icon paddingLeft='2' w='7' as={BsFilter} />
    </Flex>
    {searchFilters && <SearchFilters />}
    <Text fontSize='2xl' p='4' fontWeight='bold'>
@@ -43,21 +43,19 @@ const Search = ({ properties }) => {
     <Flex
      justifyContent='center'
      alignItems='center'
-     flexDirection='column'
+     flexDir='column'
      marginTop='5'
      marginBottom='5'
     >
      <Image alt='No result' src={noresult} />
-     <Text fontSize='2xl' marginTop='3'>
-      {' '}
-      No Results Foung
+     <Text fontSize='xl' marginTop='3'>
+      No Result Found.
      </Text>
     </Flex>
    )}
   </Box>
  );
 };
-
 export default Search;
 
 export async function getServerSideProps({ query }) {
