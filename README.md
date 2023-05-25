@@ -1,5 +1,5 @@
 - Deployment URL
-- https://real-estate-jqu4ad9x8-saadfarooq-dev.vercel.app/
+- https://search-real-estate-app.vercel.app/
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
